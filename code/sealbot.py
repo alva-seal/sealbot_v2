@@ -10,6 +10,6 @@ bot = commands.Bot()
 
 @bot.slash_command(description="Replies with pong!")
 async def ping(interaction: nextcord.Interaction):
-    await interaction.send("Pong!", ephemeral=True)
+    await interaction.send("Pong! pong!", ephemeral=True)
 
 bot.run(os.getenv("BOT_TOKEN"))
